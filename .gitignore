@@ -8,3 +8,8 @@ __pycache__/
 *.log
 .coverage
 htmlcov/
+
+instance/
+*.sqlite3
+*.sqlite3-*
+google-credentials.json
