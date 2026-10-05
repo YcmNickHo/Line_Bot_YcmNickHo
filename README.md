@@ -23,7 +23,7 @@ python3 -m venv .venv
 `.env.example` 僅說明變數名稱；應用程式不會自動載入 `.env`。
 
 ```bash
-.venv/bin/gunicorn --bind "0.0.0.0:${PORT:-8000}" --workers 2 'app:create_app()'
+.venv/bin/gunicorn --no-control-socket --bind "0.0.0.0:${PORT:-8000}" --workers 2 'app:create_app()'
 ```
 
 - `GET /healthz`：程序健康檢查，正常為 200。
